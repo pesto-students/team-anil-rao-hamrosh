@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <label>Enter Rows for Array 1</label>
+        <input type="text" id="row1" />
+        <label>Enter Cols for Array 1</label>
+        <input type="text" id="col1" />
+        <label>Array 1 Elements</label>
+        <input type="text" id="arr1box" />
+
+        <label>Enter Rows for Array 2</label>
+        <input type="text" id="row2" />
+        <label>Enter Cols for Array 2</label>
+        <input type="text" id="col2" />
+        <label>Array 2 Elements</label>
+        <input type="text" id="arr2box" />
+
+        <button onclick="showResult();">Check</button>
+        <h4 id="message"></h4>
+      </div>
+    </div>
+
+    <script src="arraysum.js"></script>
+  </body>
+</html>
